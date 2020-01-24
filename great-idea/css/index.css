@@ -103,10 +103,10 @@ img {
 }
 .navBar li {
 	display: inline;
+	font-size: 24px;
 }
 .nav80 {
 	display: inline-block;
-	margin: 1%;
 	width: 78%;
 }
 .nav20 {
@@ -225,7 +225,7 @@ button:hover {
 	padding: 3%;
 	display: inline-block;
 	margin: 2.5%;
-	width: 40%;
+	width: 45%;
 	border:  solid #355ba3;
 	border-width: 2px 4px 7px 3px;
 }
@@ -256,6 +256,12 @@ button:hover {
 @media (max-width: 1000px) {
 	h1, h2, h3, h4, h5 {
 		font-size: 22px;
+	}
+	.navBar80 {
+		margin: 1%;
+	}
+	.navBar li {
+		font-size: 16px;
 	}
 	.content50 header{
 		font-size: 70px;
@@ -289,9 +295,13 @@ button:hover {
 @media (max-width: 650px) {
 	.nav80{
 		width: 60%;
+		margin: 1%;
 	}
 	.nav20 {
 		width: 35%;
+	}
+	.navBar li {
+		font-size: 16px;
 	}
 	.logo {
 		margin-top: 40px;
