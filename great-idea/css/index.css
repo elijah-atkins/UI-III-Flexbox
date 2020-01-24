@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 body {
     width: 100%;
-    margin: auto;
+	margin: auto;
 }
 
 header {
@@ -135,12 +135,14 @@ img {
 
 /*Main box to contain content behind navbar*/
 .main {
+	background-color: #ffffff;
 	margin-top: 75px;
 	margin-right: 10%;
 	margin-left: 10%;
 	border-radius: 75px;
-	border: 25px solid #27447a;
-	box-shadow: 3px 5px 10px #111e36;
+	border: 25px solid #fafafa;
+	box-shadow: 10px 10px 10px 0 #111e368f,
+				-10px -10px 10px 0 #111e368f;
 
 }
 /*Content holder */
@@ -178,7 +180,7 @@ img {
 	font-size: 120px;
 	text-align: center;
 	transform: rotate(-5deg);
-	text-shadow: 10px 5px 20px #536380;
+
 }
 /* button center */
 .contentB {
@@ -206,10 +208,15 @@ button:hover {
 	display: inline-block;
 	margin: auto;
 	border-radius:  50%;
+	
 	animation-name: flutter;
 	animation-delay: 1s;
 	animation-duration: 2s;
 	animation-timing-function: linear;
+	border: 12px solid #ffffff;
+	box-shadow: 5px 5px 5px 0 #536380,
+				-5px -5px 5px 0 #ececec;
+
 }
 /* Content divider for 1/3 chunk */
 .content33 {
@@ -253,7 +260,10 @@ button:hover {
 }
 
 /* css media queries */
-@media (max-width: 1000px) {
+@media (max-width: 1140px) {
+	.footer {
+		
+	}
 	h1, h2, h3, h4, h5 {
 		font-size: 22px;
 	}
@@ -264,7 +274,7 @@ button:hover {
 		font-size: 16px;
 	}
 	.content50 header{
-		font-size: 70px;
+		font-size: 95px;
 	}
 	button {
 		font-size: 16px;
@@ -294,6 +304,9 @@ button:hover {
 }
 /*Media query for phone */
 @media (max-width: 650px) {
+	.body {
+		background-color: #ffffff;
+	}
 	.nav80{
 		width: 60%;
 		margin: 1%;
@@ -352,6 +365,8 @@ button:hover {
 	.footer {
 		font-size: 12px;
 		margin-top: 0px;
+		padding-top: 20px;
+		background-color: #ffffff;
 	}
 }
 /*Animations */
